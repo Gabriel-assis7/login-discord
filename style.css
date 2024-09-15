@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html,body{
+    height: 100vh;
+    background-color: rgb(85, 98, 239);
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+}
+
+.box-login{
+    width: 800px;
+    height: 400px;
+    background-color: rgba(50, 50, 50, 0.959);
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-login{
+    width: 100%;
+}
+
+.login-wraper{
+    text-align: center;
+    max-width: 400px;
+    padding: 35px;
+}
+
+.login-wraper h2{
+    color: white;
+    font-size: 20px;
+}
+
+.login-wraper p{
+    color: rgb(162, 162, 162);
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+form{
+    text-align: left;
+    padding: 0 6%;
+}
+
+.input-container-1{
+    text-align: center;
+    border-radius: 7px;
+}
+
+.input-container-1 p{
+    color: rgb(201, 201, 201);
+    font-size: 11px;
+    position: relative;
+    top: -15px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.input-container-1 span{
+    color: rgba(230, 34, 34, 0.939);
+    padding-left: 3px;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.w100{
+    width: 90%;
+    position: relative;
+    top: -8px;
+    left: -5%;
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.input-container-2{
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.input-container-2 p{
+    color: rgb(201, 201, 201);
+    font-size: 11px;
+    position: relative;
+    top: -15px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.input-container-2 span{
+    color: rgba(230, 34, 34, 0.939);
+    padding-left: 3px;
+    vertical-align: top;
+    font-size: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: rgba(97, 172, 246, 0.871);
+    font-size: 13px;
+    position: relative;
+    top: -8px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 90%;
+    height: 45px;
+    background-color:  rgb(83, 119, 240);
+    color: white;
+    margin-top: 8px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition: 100ms;
+    background-color:  rgb(63, 94, 207);
+}
+
+.register{
+    color: rgba(166, 166, 166, 0.846);
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.register a{
+    color: rgba(97, 172, 246, 0.871);
+    font-size: 14px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
+
+.mobile{
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: -2%;
+    transform: translate(-1%, 4%);
+    padding: 10px;
+}
+
+.qr-code img{
+    width: 150px;
+    height: 150px;
+}
+
+.texto-qr{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.texto-qr h2{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.texto-qr p{
+    color: rgb(160, 160, 160);
+    text-align: center;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.texto-qr span{
+    color: rgb(191, 191, 191);
+}
+
+@media screen and (max-width:860px){
+    .mobile{
+        display: none;
+    }
+
+    .box-login{
+        width: 480px;
+        height: 400px;
+    }
+
+    .login-wraper{
+        margin: 0 auto;
+    }
+    
+    form{
+        text-align: center;
+    }
+
+    .w100{
+        position: static;
+        width: 100%;
+    }
+
+    .input-container-1 p{
+        position: relative;
+        top: -8px;
+        text-align: left;
+    }
+
+    .input-container-2 p{
+        position: relative;
+        top: -8px;
+        text-align: left;
+    }
+
+    .link{
+        position: relative;
+        top: 3px;
+        float: left;
+    }
+
+    .btn{
+        width: 100%;
+        margin-top: 25px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .register{
+        padding-top: 2px;
+        float: left;
+    }
+}
